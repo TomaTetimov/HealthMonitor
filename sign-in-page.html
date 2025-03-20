@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Monitor - Регистрация</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            margin: 0;
+        }
+        .signup-container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 350px;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #007bff;
+            margin-bottom: 15px;
+        }
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        a {
+            display: block;
+            margin-top: 15px;
+            color: #007bff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .error {
+            color: red;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="signup-container">
+        <div class="logo">Health Monitor</div>
+        <h2>Регистрация</h2>
+        <form id="signupForm">
+            <input type="text" id="newUsername" name="newUsername" placeholder="Потребителско име" required>
+            <input type="email" id="email" name="email" placeholder="Имейл" required>
+            <input type="password" id="newPassword" name="newPassword" placeholder="Парола" required>
+            <button type="submit">Регистрирай се</button>
+            <p id="errorMessage" class="error"></p>
+        </form>
+        <a href="login-page.html">Вече имате акаунт? Влезте</a>
+    </div>
+    <script>
+        document.getElementById("signupForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            let username = document.getElementById("newUsername").value;
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("newPassword").value;
+            let errorMessage = document.getElementById("errorMessage");
+            
+            if (username === "" || email === "" || password === "") {
+                errorMessage.textContent = "Моля, попълнете всички полета!";
+                return;
+            }
+            
+            if (password.length < 6) {
+                errorMessage.textContent = "Паролата трябва да бъде поне 6 символа!";
+                return;
+            }
+            
+            window.location.href = "welcome.html";
+        });
+    </script>
+</body>
+</html>
