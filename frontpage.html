@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthMonitor - Начало</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://images.unsplash.com/photo-1434682881908-b43d0467b798') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+
+        .header {
+            position: absolute;
+            top: 20px;
+            left: 30px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo {
+            height: 60px;
+        }
+
+        .login-btn {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .login-btn:hover {
+            background: #0056b3;
+        }
+
+        .content {
+            max-width: 900px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .info-box {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            width: 280px;
+        }
+
+        h1 {
+            color: #3f79c5;
+            font-size: 36px;
+            width: 100%;
+        }
+
+        p {
+            color: #555;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="/mnt/data/image.png" alt="HealthMonitor Logo" class="logo">
+    </div>
+    <a href="login.html" class="login-btn">Login</a>
+
+    <h1>Добре дошли в HealthMonitor</h1>
+    <div class="content">
+        <div class="info-box">
+            <p>Следете своя дневен калориен баланс.</p>
+        </div>
+        <div class="info-box">
+            <p>Получете персонализирани съвети за хранене.</p>
+        </div>
+        <div class="info-box">
+            <p>Планирайте и постигайте своите здравословни цели.</p>
+        </div>
+    </div>
+</body>
+</html>
