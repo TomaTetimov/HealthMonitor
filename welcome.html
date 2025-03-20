@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthMonitor - Калориен Калкулатор</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://images.unsplash.com/photo-1556911261-4fd0c65bf7a5') no-repeat center center/cover;
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(2px);
+            z-index: 1;
+        }
+        
+        .container {
+            max-width: 900px;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+        
+        h1 {
+            color: #333;
+            font-size: 36px;
+        }
+        
+        p {
+            color: #555;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            font-size: 18px;
+            background: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+        
+        .btn:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Добре дошли в HealthMonitor</h1>
+        <p>Нашият инструмент ви помага да изчислите дневния си калориен прием, за да постигнете желаните си цели – отслабване, поддържане или покачване на тегло.</p>
+        <p>Чрез въвеждане на вашата възраст, пол, тегло, ръст и ниво на активност, ще получите персонализирана информация за калорийния си баланс.</p>
+        <p>Освен това ще намерите полезни съвети за здравословно хранене и управление на теглото.</p>
+        <a href="calculator.html" class="btn">Изчисли калориите си</a>
+    </div>
+</body>
+</html>
