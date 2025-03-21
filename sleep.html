@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="bg">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Препоръчително време за лягане</title>
+    <title>Recommended Bedtime</title>
     <style>
         body { 
             font-family: 'Arial', sans-serif; 
@@ -79,15 +79,14 @@
     </style>
 </head>
 <body>
-    <h1> Сънят и твоето здраве</h1>
-    <p> Сънят е много важна част от нашето здраве. Затова не трябва да бъде пренебрегван.<br>
-        Тук ще можеш да въведеш кога те събужда алармата ти и нашият софтуер ще ти каже кога са
-        препоръчителните часове, в които да си легнеш.</p>
+    <h1> Sleep and Your Health</h1>
+    <p> Sleep is a very important part of our health. Therefore, it should not be neglected.<br>
+        Here, you can enter the time your alarm wakes you up, and our software will tell you the recommended times to go to bed.</p>
     <div class="container">
-        <h1>🌙 Изчисли кога да си легнеш</h1>
-        <label for="alarmTime">⏰ Въведи часа на алармата:</label>
+        <h1>🌙 Calculate When to Sleep</h1>
+        <label for="alarmTime">⏰ Enter Your Alarm Time:</label>
         <input type="time" id="alarmTime">
-        <button onclick="calculateSleepTime()">💤 Изчисли</button>
+        <button onclick="calculateSleepTime()">💤 Calculate</button>
         <div id="result"></div>
     </div>
     
@@ -95,7 +94,7 @@
         function calculateSleepTime() {
             let alarmInput = document.getElementById("alarmTime").value;
             if (!alarmInput) {
-                alert("⚠️ Моля, въведете валиден час!");
+                alert("⚠️ Please enter a valid time!");
                 return;
             }
             
@@ -115,7 +114,7 @@
                 sleepTimes.push(formattedTime);
             }
             
-            document.getElementById("result").innerHTML = "Препоръчителни часове за лягане: <br>" + sleepTimes.join("<br>");
+            document.getElementById("result").innerHTML = "Recommended bedtimes: <br>" + sleepTimes.join("<br>");
         }
     </script>
 </body>
