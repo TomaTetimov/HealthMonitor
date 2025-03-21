@@ -1,85 +1,106 @@
 <!DOCTYPE html>
-<html lang="bg">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <title>HealthMonitor - Начало</title>
     <link rel="icon" href="https://media.discordapp.net/attachments/1338577166086045717/1352411948683235398/image.png?ex=67ddeb47&is=67dc99c7&hm=1795835936052591e245ea9fe0f4f39f3a5ed463ded34db85232a21217dcfd53&=&format=webp&quality=lossless&width=321&height=308">
+=======
+    <title>Fitness Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+>>>>>>> e686ac114defe8333ef42d377b2c58c61be26e35
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: url('https://images.unsplash.com/photo-1434682881908-b43d0467b798') no-repeat center center/cover;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            position: relative;
+            background-color: #f4f4f4;
+            color: #fff;
         }
-
-        .header {
-            position: absolute;
-            top: 20px;
-            left: 30px;
-            display: flex;
-            align-items: center;
-            gap: 20px;
-        }
-
-        .logo {
-            height: 60px;
-        }
-
-        .login-btn {
-            position: absolute;
-            top: 20px;
-            right: 30px;
-            padding: 10px 20px;
-            font-size: 16px;
-            background: #007bff;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            transition: 0.3s;
-        }
-
-        .login-btn:hover {
-            background: #0056b3;
-        }
-
-        .content {
-            max-width: 900px;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-        }
-
-        .info-box {
-            background: rgba(255, 255, 255, 0.9);
+        header {
+            background: #007BFF;
             padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-            width: 280px;
+            text-align: center;
         }
-
-        h1 {
-            color: #3f79c5;
-            font-size: 36px;
-            width: 100%;
+        header h1 {
+            margin: 0;
+            font-size: 2em;
         }
-
-        p {
-            color: #555;
-            font-size: 18px;
-            line-height: 1.6;
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            background: linear-gradient(to right, #007BFF, #00A8FF);
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .hero h2 {
+            font-size: 2.5em;
+        }
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .hero button {
+            background: #ffcc00;
+            color: #000;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 1.2em;
+            border-radius: 5px;
+        }
+        .features {
+            text-align: center;
+            padding: 50px 20px;
+            background: #fff;
+            color: #000;
+        }
+        .feature-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .feature-box {
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+            width: 250px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .feature-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .feature-box i {
+            font-size: 2em;
+            color: #007BFF;
+        }
+        footer {
+            background: #007BFF;
+            padding: 10px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
+<<<<<<< HEAD
 
     <img src="https://media.discordapp.net/attachments/1338577166086045717/1352411948683235398/image.png?ex=67ddeb47&is=67dc99c7&hm=1795835936052591e245ea9fe0f4f39f3a5ed463ded34db85232a21217dcfd53&=&format=webp&quality=lossless&width=321&height=308" alt="Лого" class="logo">
 
@@ -92,13 +113,55 @@
     <div class="content">
         <div class="info-box">
             <p>Следете своя дневен калориен баланс.</p>
+=======
+    <header>
+        <h1>HealthMonitor</h1>
+        <style>
+            h1{
+                text-decoration: underline;
+            }
+        </style>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Track Your Progress, Transform Your Body</h2>
+            <p>Stay motivated and achieve your fitness goals with real-time tracking and insights.</p>
+            <button onclick="scrollToSection('features')">Get Started</button>
+>>>>>>> e686ac114defe8333ef42d377b2c58c61be26e35
         </div>
-        <div class="info-box">
-            <p>Получете персонализирани съвети за хранене.</p>
+    </section>
+    
+    <section id="features" class="features">
+        <h2>Why Use Our Tracker?</h2>
+        <div class="feature-container">
+            <div class="feature-box">
+                <i class="fas fa-chart-line"></i>
+                <h3>Live Progress Tracking</h3>
+                <p>Monitor your weight, muscle mass, and overall progress.</p>
+            </div>
+            <div class="feature-box">
+                <i class="fas fa-dumbbell"></i>
+                <h3>Workout Logging</h3>
+                <p>Keep track of your workouts and optimize your training.</p>
+            </div>
+            <div class="feature-box">
+                <i class="fas fa-utensils"></i>
+                <h3>Nutrition Planning</h3>
+                <p>Manage your diet and track your macros effortlessly.</p>
+            </div>
         </div>
-        <div class="info-box">
-            <p>Планирайте и постигайте своите здравословни цели.</p>
-        </div>
-    </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025  HealthMonitor. All rights reserved.</p>
+    </footer>
 </body>
 </html>

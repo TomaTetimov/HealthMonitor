@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\H2\\HealthMonitor\\MyProject\\MyProject.csproj": {}
+    "C:\\h2\\HealthMonitor\\MyProject\\MyProject.csproj": {}
   },
   "projects": {
-    "C:\\H2\\HealthMonitor\\MyProject\\MyProject.csproj": {
+    "C:\\h2\\HealthMonitor\\MyProject\\MyProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\H2\\HealthMonitor\\MyProject\\MyProject.csproj",
+        "projectUniqueName": "C:\\h2\\HealthMonitor\\MyProject\\MyProject.csproj",
         "projectName": "MyProject",
-        "projectPath": "C:\\H2\\HealthMonitor\\MyProject\\MyProject.csproj",
+        "projectPath": "C:\\h2\\HealthMonitor\\MyProject\\MyProject.csproj",
         "packagesPath": "C:\\Users\\Yavor\\.nuget\\packages\\",
-        "outputPath": "C:\\H2\\HealthMonitor\\MyProject\\obj\\",
+        "outputPath": "C:\\h2\\HealthMonitor\\MyProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Yavor\\AppData\\Roaming\\NuGet\\NuGet.Config"
