@@ -70,6 +70,9 @@
         .exercise-card[data-category="abs"] {
             background-image: url('https://spisanie.muscleandfitness.bg/wp-content/uploads/2016/02/12675207_10154480343425830_1127976597_o.jpg');
         }
+        .exercise-card[data-category="schedule"] {
+            background-image: url('https://img.freepik.com/free-vector/gym-schedule-template_23-2147944704.jpg');
+        }
 
         .exercise-card:nth-child(1) {
             grid-column: 1 / 2;
@@ -87,16 +90,18 @@
         }
 
         .exercise-card:nth-child(4) {
-            grid-column: 1 / 3;
+            grid-column: 1 / 2;
             grid-row: 2;
-            width: 50%;
-            margin: 0 auto;
         }
 
         .exercise-card:nth-child(5) {
-            grid-column: 2 / 4;
+            grid-column: 2 / 3;
             grid-row: 2;
-            width: 50%;
+            margin: 0 auto;
+        }
+        .exercise-card:nth-child(6) {
+            grid-column: 3 / 4;
+            grid-row: 2;
             margin: 0 auto;
         }
 
@@ -178,7 +183,8 @@
             .exercise-card:nth-child(2),
             .exercise-card:nth-child(3),
             .exercise-card:nth-child(4),
-            .exercise-card:nth-child(5) {
+            .exercise-card:nth-child(5),
+            .exercise-card:nth-child(6) {
                 grid-column: auto;
                 grid-row: auto;
                 width: 100%;
@@ -193,7 +199,12 @@
         <div class="exercise-card" data-category="arms">Hands</div>
         <div class="exercise-card" data-category="legs">Legs</div>
         <div class="exercise-card" data-category="back">Back</div>
+<<<<<<< HEAD
         <div class="exercise-card" data-category="abs">Core</div>
+=======
+        <div class="exercise-card" data-category="abs">Abs</div>
+        <div class="exercise-card" data-category="schedule">Schedule</div>
+>>>>>>> 788679c71ad22dc75983f0589af8c2ece45c6300
     </div>
 
     <div class="modal" id="exerciseModal">
@@ -235,6 +246,16 @@
                 "Abdominal presses - 3х20",
                 "A bicycle - 3х15",
                 "Side plank - 3х45 sec"
+            ],
+            schedule: [
+                "Week plan:",
+                "Monday- Abs and Legs",
+                "Tuesday- Hands and back",
+                "Wendsday- Day off",
+                "Thuseday- Cardio",
+                "Friday- Legs, Hands and Back",
+                "Saturday- Abs and Cardio",
+                "Sunday- Day off(Cheat day)"
             ]
         };
 

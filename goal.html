@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <title>Твоята форма</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .question {
+            margin-bottom: 30px;
+        }
+        .image-option {
+            display: inline-block;
+            margin: 10px;
+            text-align: center;
+        }
+        img {
+            width: 150px;
+            height: 200px;
+            cursor: pointer;
+            border: 2px solid transparent;
+        }
+        img.selected {
+            border: 2px solid blue;
+        }
+        button {
+            padding: 10px 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tell Us About Your Fitness</h1>
+
+    <div class="question">
+        <h2>How Do You Look Now?</h2>
+        <div class="image-option">
+            <img src="slab chovek.png" alt="Thin" onclick="selectImage(this, 'current')">
+            <p>Thin</p>
+        </div>
+        <div class="image-option">
+            <img src="normalen chovek.png" alt="Normal" onclick="selectImage(this, 'current')">
+            <p>Normal</p>
+        </div>
+        <div class="image-option">
+            <img src="muskolest chovek.png" alt="Muscular" onclick="selectImage(this, 'current')">
+            <p>Muscular</p>
+        </div>
+    </div>
+
+    <div class="question">
+        <h2>How Do You Want to Look?</h2>
+        <div class="image-option">
+            <img src="slab chovek.png" alt="Thin" onclick="selectImage(this, 'goal')">
+            <p>Thin</p>
+        </div>
+        <div class="image-option">
+            <img src="muskolest chovek.png" alt="Muscular" onclick="selectImage(this, 'goal')">
+            <p>Muscular</p>
+        </div>
+        <div class="image-option">
+            <img src="normalen chovek.png" alt="Normal" onclick="selectImage(this, 'goal')">
+            <p>Normal</p>
+        </div>
+    </div>
+
+    <button><a href="exersice page.html">Submit</a></button>
+
+    <script>
+        let currentSelected = null;
+        let goalSelected = null;
+
+        function selectImage(img, type) {
+            if (type === 'current') {
+                if (currentSelected) currentSelected.classList.remove('selected');
+                currentSelected = img;
+            } else {
+                if (goalSelected) goalSelected.classList.remove('selected');
+                goalSelected = img;
+            }
+            img.classList.add('selected');
+        }
+
+        function submitSelection() {
+            if (!currentSelected || !goalSelected) {
+                alert('Please select both options!');
+            } else {
+                alert(`Сега: ${currentSelected.alt}\nЦел: ${goalSelected.alt}`);
+            }
+        }
+    </script>
+</body>
+</html>
