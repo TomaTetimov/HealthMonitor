@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Yavor\\.nuget\\packages\\": {}
+    "C:\\Users\\Toma\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\H2\\HealthMonitor\\MyProject\\MyProject.csproj",
+      "projectUniqueName": "C:\\Users\\Toma\\Desktop\\Hack Tues 11\\HealthMonitor\\MyProject\\MyProject.csproj",
       "projectName": "MyProject",
-      "projectPath": "C:\\H2\\HealthMonitor\\MyProject\\MyProject.csproj",
-      "packagesPath": "C:\\Users\\Yavor\\.nuget\\packages\\",
-      "outputPath": "C:\\H2\\HealthMonitor\\MyProject\\obj\\",
+      "projectPath": "C:\\Users\\Toma\\Desktop\\Hack Tues 11\\HealthMonitor\\MyProject\\MyProject.csproj",
+      "packagesPath": "C:\\Users\\Toma\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Toma\\Desktop\\Hack Tues 11\\HealthMonitor\\MyProject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Yavor\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Toma\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
