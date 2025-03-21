@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Препоръчително време за лягане</title>
+    <style>
+        body { 
+            font-family: 'Arial', sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background: linear-gradient(to right, #0e8dd6, #2a5298); 
+            color: #fff; 
+            text-align: center; 
+            display: flex; 
+            flex-direction: column;
+            align-items: center; 
+            justify-content: center; 
+            height: 100vh;
+        }
+        .container { 
+            width: 360px; 
+            padding: 30px; 
+            background: rgba(0, 0, 0, 0.6); 
+            border-radius: 20px; 
+            box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2); 
+            backdrop-filter: blur(8px); 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+        h1 { 
+            font-size: 2em; 
+            margin-bottom: 15px; 
+            text-shadow: 3px 3px 10px rgba(255, 255, 255, 0.8);
+        }
+        label, input, button { 
+            font-size: 1.2em; 
+            margin-top: 10px; 
+            display: block; 
+        }
+        input { 
+            padding: 12px; 
+            border-radius: 30px; 
+            border: none; 
+            text-align: center; 
+            font-size: 1.1em; 
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            width: 85%;
+        }
+        input:focus {
+            background: rgba(255, 255, 255, 0.4);
+            outline: none;
+        }
+        button { 
+            background: linear-gradient(45deg, #ff9800, #ff5722); 
+            color: #fff; 
+            border: none; 
+            padding: 12px; 
+            cursor: pointer; 
+            border-radius: 30px; 
+            font-size: 1.2em; 
+            width: 85%;
+            font-weight: bold;
+        }
+        button:hover { 
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgba(255, 87, 34, 0.7);
+        }
+    </style>
+</head>
+<body>
+    <h1> Сънят и твоето здраве</h1>
+    <p> Сънят е много важна част от нашето здраве. Затова не трябва да бъде пренебрегван.<br>
+        Тук ще можеш да въведеш кога те събужда алармата ти и нашият софтуер ще ти каже кога са
+        препоръчителните часове, в които да си легнеш.</p>
+    <div class="container">
+        <h1>🌙 Изчисли кога да си легнеш</h1>
+        <label for="alarmTime">⏰ Въведи часа на алармата:</label>
+        <input type="time" id="alarmTime">
+        <button onclick="calculateSleepTime()">💤 Изчисли</button>
+    </div>
+    
+    <script>
+        function calculateSleepTime() {
+            let alarmInput = document.getElementById("alarmTime").value;
+            if (!alarmInput) {
+                alert("⚠️ Моля, въведете валиден час!");
+                return;
+            }
+        }
+    </script>
+</body>
+</html>
