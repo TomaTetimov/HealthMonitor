@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Calorie Counter</h2>
+        <div class="form">
+            <label for="food">Select a Food:</label>
+            <select id="food">
+                <!-- Dropdown for 50 foods will be inserted here by JavaScript -->
+            </select>
+            
+            <label for="amount">Amount (g):</label>
+            <input type="number" id="amount" placeholder="Enter amount in grams" />
+            
+            <button id="calculate-btn">Calculate Calories</button>
+        </div>
+        
+        <div class="results">
+            <p>Calories: <span id="calories">0</span> kcal</p>
+            <div id="calories-bar" class="bar">
+                <div id="bar-fill" class="fill"></div>
+            </div>
+            <p>Total Calories: <span id="total-calories">0</span> kcal</p>
+        </div>
+        
+        <div class="added-foods">
+            <h3>Added Foods</h3>
+            <ul id="food-list">
+                <!-- Added foods will be dynamically inserted here -->
+            </ul>
+        </div>
+        
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
