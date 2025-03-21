@@ -70,6 +70,12 @@
             transform: scale(1.1);
             box-shadow: 0 0 15px rgba(255, 87, 34, 0.7);
         }
+        #result {
+            margin-top: 20px;
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #ffcc00;
+        }
     </style>
 </head>
 <body>
@@ -82,6 +88,7 @@
         <label for="alarmTime">⏰ Въведи часа на алармата:</label>
         <input type="time" id="alarmTime">
         <button onclick="calculateSleepTime()">💤 Изчисли</button>
+        <div id="result"></div>
     </div>
     
     <script>
@@ -91,6 +98,24 @@
                 alert("⚠️ Моля, въведете валиден час!");
                 return;
             }
+            
+            let [hours, minutes] = alarmInput.split(":").map(Number);
+            let alarmDate = new Date();
+            alarmDate.setHours(hours);
+            alarmDate.setMinutes(minutes);
+            
+            let sleepCycles = 6; 
+            let cycleDuration = 90; 
+            let fallAsleepTime = 15;
+            
+            let sleepTimes = [];
+            for (let i = sleepCycles; i >= 4; i--) {
+                let sleepTime = new Date(alarmDate.getTime() - (i * cycleDuration + fallAsleepTime) * 60000);
+                let formattedTime = sleepTime.getHours().toString().padStart(2, '0') + ":" + sleepTime.getMinutes().toString().padStart(2, '0');
+                sleepTimes.push(formattedTime);
+            }
+            
+            document.getElementById("result").innerHTML = "Препоръчителни часове за лягане: <br>" + sleepTimes.join("<br>");
         }
     </script>
 </body>
