@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Health Monitor - Регистрация</title>
+    <title>Health Monitor - Registration</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -74,15 +74,15 @@
 <body>
     <div class="signup-container">
         <div class="logo">Health Monitor</div>
-        <h2>Регистрация</h2>
+        <h2>Registration</h2>
         <form id="signupForm">
-            <input type="text" id="newUsername" name="newUsername" placeholder="Потребителско име" required>
-            <input type="email" id="email" name="email" placeholder="Имейл" required>
-            <input type="password" id="newPassword" name="newPassword" placeholder="Парола" required>
-            <button type="submit">Регистрирай се</button>
+            <input type="text" id="newUsername" name="newUsername" placeholder="Username" required>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <input type="password" id="newPassword" name="newPassword" placeholder="Password" required>
+            <button type="submit">Sign up</button>
             <p id="errorMessage" class="error"></p>
         </form>
-        <a href="login-page.html">Вече имате акаунт? Влезте</a>
+        <a href="login-page.html">Already have an account? Sign in</a>
     </div>
     <script>
         document.getElementById("signupForm").addEventListener("submit", function(event) {
@@ -93,12 +93,12 @@
             let errorMessage = document.getElementById("errorMessage");
             
             if (username === "" || email === "" || password === "") {
-                errorMessage.textContent = "Моля, попълнете всички полета!";
+                errorMessage.textContent = "Please fill in all fields!";
                 return;
             }
             
             if (password.length < 6) {
-                errorMessage.textContent = "Паролата трябва да бъде поне 6 символа!";
+                errorMessage.textContent = "The password must be at least 6 characters long!";
                 return;
             }
             

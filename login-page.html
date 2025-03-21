@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Health Monitor - Вход</title>
+    <title>Health Monitor - Login</title>
     <link rel="icon" href="https://media.discordapp.net/attachments/1338577166086045717/1352411948683235398/image.png?ex=67ddeb47&is=67dc99c7&hm=1795835936052591e245ea9fe0f4f39f3a5ed463ded34db85232a21217dcfd53&=&format=webp&quality=lossless&width=321&height=308">
 
     <style>
@@ -76,16 +76,16 @@
 <body>
     <div class="login-container">
         <div class="logo">Health Monitor</div>
-        <h2>Вход</h2>
+        <h2>Login</h2>
         <form id="loginForm">
-            <input type="text" id="username" name="username" placeholder="Потребителско име" required>
-            <input type="password" id="password" name="password" placeholder="Парола" required>
+            <input type="text" id="username" name="username" placeholder="Username" required>
+            <input type="password" id="password" name="password" placeholder="Password" required>
             <a href= "/index.html">
             <button type="submit">Влез</button>
             </a>
             <p id="errorMessage" class="error"></p>
         </form>
-        <a href="sign-in-page.html">Нямате акаунт? Регистрирайте се</a>
+        <a href="sign-in-page.html">Don't have an account? Sign up</a>
     </div>
     <script>
         document.getElementById("loginForm").addEventListener("submit", function(event) {
@@ -95,21 +95,18 @@
             let errorMessage = document.getElementById("errorMessage");
             
             if (password.length < 6) {
-                errorMessage.textContent = "Паролата трябва да бъде поне 6 символа!";
+                errorMessage.textContent = "The password must be at least 6 characters long!";
                 return;
             }
 
             if (username === "" || password === "") {
-                errorMessage.textContent = "Моля, попълнете всички полета!";
+                errorMessage.textContent = "Please fill in all fields!";
                 return;
             }
             else {
                 window.location.href="welcome.html";
             }
             
-            
-            // Пренасочване към друга страница
-             // Създай този файл и напиши съдържанието му
         });
     </script>
 </body>
