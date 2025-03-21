@@ -148,46 +148,45 @@
     </style>
 </head>
 <body>
-    <h1>Разкажи ни за твоята форма</h1>
     <a href="javascript:history.back()" class="back-arrow">&#8592;</a>
     <h1>Tell Us About Your Fitness</h1>
     <div class="question">
-        <h2>Как изглеждаш сега?</h2>
+        <h2>How do you look now?</h2>
         <div class="options-container">
             <div class="image-option" onclick="selectImage(this, 'current')">
-                <img src="slab chovek.png" alt="Слаб">
-                <p>Слаб</p>
+                <img src="slab chovek.png" alt="Skinny">
+                <p>Skinny</p>
             </div>
             <div class="image-option" onclick="selectImage(this, 'current')">
-                <img src="normalen chovek.png" alt="Нормален">
-                <p>Нормален</p>
+                <img src="normalen chovek.png" alt="Normal">
+                <p>Normal</p>
             </div>
             <div class="image-option" onclick="selectImage(this, 'current')">
-                <img src="muskolest chovek.png" alt="Мускулeст">
-                <p>Мускулeст</p>
+                <img src="muskolest chovek.png" alt="Muscular">
+                <p>Muscular</p>
             </div>
         </div>
     </div>
 
     <div class="question">
-        <h2>Как искаш да изглеждаш?</h2>
+        <h2>How do you want to look?</h2>
         <div class="options-container">
             <div class="image-option" onclick="selectImage(this, 'goal')">
-                <img src="slab chovek.png" alt="Слаб">
-                <p>Слаб</p>
+                <img src="slab chovek.png" alt="Skinny">
+                <p>Skinny</p>
             </div>
             <div class="image-option" onclick="selectImage(this, 'goal')">
-                <img src="muskolest chovek.png" alt="Мускулeст">
-                <p>Мускулeст</p>
+                <img src="muskolest chovek.png" alt="Muscular">
+                <p>Muscular</p>
             </div>
             <div class="image-option" onclick="selectImage(this, 'goal')">
-                <img src="normalen chovek.png" alt="Нормален">
-                <p>Нормален</p>
+                <img src="normalen chovek.png" alt="Normal">
+                <p>Normal</p>
             </div>
         </div>
     </div>
 
-    <button onclick="submitSelection()"><a href="exersice page.html">Изпрати</a></button>
+    <button onclick="submitSelection()"><a href="exersice page.html">Send</a></button>
 
     <script>
         let currentSelected = null;
@@ -207,9 +206,9 @@
 
         function submitSelection() {
             if (!currentSelected || !goalSelected) {
-                alert('Моля, избери и двете опции!');
+                alert('Please select both options!');
             } else {
-                console.log(`Сега: ${currentSelected.alt}\nЦел: ${goalSelected.alt}`);
+                console.log(`Now: ${currentSelected.alt}\nGoal: ${goalSelected.alt}`);
                 window.location.href = 'exersice page.html';
             }
         }
