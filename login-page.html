@@ -34,13 +34,20 @@
             margin-bottom: 20px;
             color: #333;
         }
-        input {
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            gap: 15px; /* Увеличено разстояние между полетата */
+            align-items: center;
             width: 100%;
+        }
+        .input-group input {
+            width: 90%;
             padding: 12px;
-            margin: 10px 0;
             border: 1px solid #ccc;
             border-radius: 6px;
             font-size: 16px;
+            text-align: left;
         }
         button {
             width: 100%;
@@ -52,6 +59,7 @@
             font-size: 16px;
             cursor: pointer;
             transition: background 0.3s;
+            margin-top: 15px; /* Добавено разстояние над бутона */
         }
         button:hover {
             background: #0056b3;
@@ -78,11 +86,11 @@
         <div class="logo">Health Monitor</div>
         <h2>Login</h2>
         <form id="loginForm">
-            <input type="text" id="username" name="username" placeholder="Username" required>
-            <input type="password" id="password" name="password" placeholder="Password" required>
-            <a href= "/index.html">
+            <div class="input-group">
+                <input type="text" id="username" name="username" placeholder="Username" required>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+            </div>
             <button type="submit">Login</button>
-            </a>
             <p id="errorMessage" class="error"></p>
         </form>
         <a href="sign-in-page.html">Don't have an account? Sign up</a>
@@ -106,7 +114,6 @@
             else {
                 window.location.href="welcome.html";
             }
-            
         });
     </script>
 </body>
