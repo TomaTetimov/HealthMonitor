@@ -31,11 +31,27 @@
             padding: 10px 20px;
             margin-top: 20px;
         }
+        .back-arrow {
+            position: absolute;
+            top: 20px;
+            left: 25px;
+            font-size: 30px;
+            color: white;
+            text-decoration: none;
+            background: rgb(0, 110, 255);
+            padding: 15px 15px;
+            border-radius: 50%;
+            transition: background 0.3s;
+        }
+
+        .back-arrow:hover {
+            background: rgba(3, 6, 134, 0.8);
+        }
     </style>
 </head>
 <body>
+    <a href="javascript:history.back()" class="back-arrow">&#8592;</a>
     <h1>Tell Us About Your Fitness</h1>
-
     <div class="question">
         <h2>How Do You Look Now?</h2>
         <div class="image-option">

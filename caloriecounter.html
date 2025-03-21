@@ -5,8 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calorie Counter</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .back-arrow {
+            position: absolute;
+            top: 20px;
+            left: 25px;
+            font-size: 30px;
+            color: white;
+            text-decoration: none;
+            background: rgb(0, 110, 255);
+            padding: 15px 15px;
+            border-radius: 50%;
+            transition: background 0.3s;
+        }
+
+        .back-arrow:hover {
+            background: rgba(3, 6, 134, 0.8);
+        }
+    </style>
 </head>
 <body>
+    <a href="javascript:history.back()" class="back-arrow">&#8592;</a>
     <div class="container">
         <h2>Calorie Counter</h2>
         <div class="form">
