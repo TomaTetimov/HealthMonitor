@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Упражнения</title>
+    <title>Exerciseс</title>
     <style>
         body {
             font-family: 'Segoe UI', Arial, sans-serif;
@@ -71,7 +71,6 @@
             background-image: url('https://spisanie.muscleandfitness.bg/wp-content/uploads/2016/02/12675207_10154480343425830_1127976597_o.jpg');
         }
 
-        /* Позициониране на долните две карти */
         .exercise-card:nth-child(1) {
             grid-column: 1 / 2;
             grid-row: 1;
@@ -106,7 +105,6 @@
             box-shadow: 0 8px 20px rgba(26, 60, 143, 0.2);
         }
 
-        /* Modal Styles */
         .modal {
             display: none;
             position: fixed;
@@ -189,13 +187,13 @@
     </style>
 </head>
 <body>
-    <h1>Категории Упражнения</h1>
+    <h1>Categories Exercises</h1>
     <div class="exercise-grid">
-        <div class="exercise-card" data-category="weightloss">Отслабване</div>
-        <div class="exercise-card" data-category="arms">Ръце</div>
-        <div class="exercise-card" data-category="legs">Крака</div>
-        <div class="exercise-card" data-category="back">Гръб</div>
-        <div class="exercise-card" data-category="abs">Корем</div>
+        <div class="exercise-card" data-category="weightloss">Losing weight</div>
+        <div class="exercise-card" data-category="arms">Hands</div>
+        <div class="exercise-card" data-category="legs">Legs</div>
+        <div class="exercise-card" data-category="back">Back</div>
+        <div class="exercise-card" data-category="abs">Belly</div>
     </div>
 
     <div class="modal" id="exerciseModal">
@@ -209,34 +207,34 @@
     <script>
         const exercises = {
             weightloss: [
-                "Бягане на открито - 30 мин",
-                "Скачане на въже - 15 мин",
-                "Интервален HIIT - 20 мин",
-                "Велоергометър - 40 мин"
+                "Outdoor running - 30 min",
+                "Jumping rope - 15 min",
+                "Interval HIIT - 20 min",
+                "Exercise bike - 40 min"
             ],
             arms: [
-                "Сгъване с дъмбели - 3х12",
-                "Трицепс на скрипец - 3х10",
-                "Лицеви опори - 3х15",
-                "Странично разгъване - 3х12"
+                "Dumbbell curl - 3х12",
+                "Triceps on pulley - 3х10",
+                "Push-ups - 3х15",
+                "Side expansion - 3х12"
             ],
             legs: [
-                "Клякания с тежест - 4х10",
-                "Напади с дъмбели - 3х12",
-                "Лег прес - 3х15",
-                "Повдигане на пръсти - 3х20"
+                "Weighted squats - 4х10",
+                "Dumbbell lunges - 3х12",
+                "Leg press - 3х15",
+                "Finger lift - 3х20"
             ],
             back: [
-                "Гребане с щанга - 3х10",
-                "Набирания с подхват - 3х8",
-                "Хипerekстензия - 3х12",
-                "Лат машина - 3х10"
+                "Barbell rowing - 3х10",
+                "Pick-up calls - 3х8",
+                "Hyperextension - 3х12",
+                "Lat machine - 3х10"
             ],
             abs: [
-                "Планк - 3х60 сек",
-                "Коремни преси - 3х20",
-                "Велосипед - 3х15",
-                "Страничен планк - 3х45 сек"
+                "Plank - 3х60 sec",
+                "Abdominal presses - 3х20",
+                "A bicycle - 3х15",
+                "Side plank - 3х45 sec"
             ]
         };
 
