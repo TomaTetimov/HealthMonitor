@@ -1,86 +1,145 @@
 <!DOCTYPE html>
-<html lang="bg">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HealthMonitor - Калориен Калкулатор</title>
-    <link rel="icon" href="https://media.discordapp.net/attachments/1338577166086045717/1352411948683235398/image.png?ex=67ddeb47&is=67dc99c7&hm=1795835936052591e245ea9fe0f4f39f3a5ed463ded34db85232a21217dcfd53&=&format=webp&quality=lossless&width=321&height=308">
+    <title>HealthMonitor - Features</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: #007bff;
+            background-color: #f4f4f4;
+            color: #fff;
+        }
+        header {
+            background: #007BFF;
+            padding: 20px;
             text-align: center;
-            height: 100vh;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+            text-decoration: underline;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
             display: flex;
-            align-items: center;
             justify-content: center;
-            position: relative;
         }
-        
-        body::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(2px);
-            z-index: 1;
+        nav ul li {
+            margin: 0 15px;
         }
-        
-        .container {
-            max-width: 1000px;
-            padding: 70px;
-            background: rgba(255, 255, 255, 0.9);
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-            border-radius: 15px;
-            text-align: center;
-            position: relative;
-            z-index: 2;
-        }
-        
-        h1 {
-            color: #333;
-            font-size: 36px;
-        }
-        
-        p {
-            color: #555;
-            font-size: 18px;
-            line-height: 1.6;
-        }
-        
-        .btn {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 15px 30px;
-            font-size: 18px;
-            background: #2053b1;
-            color: white;
+        nav ul li a {
+            color: #fff;
             text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            background: linear-gradient(to right, #007BFF, #00A8FF);
+            padding: 80px 20px;
+            text-align: center;
+        }
+        .hero h2 {
+            font-size: 2.5em;
+        }
+        .hero p {
+            font-size: 1.2em;
+        }
+        .features {
+            text-align: center;
+            padding: 50px 20px;
+            background: #fff;
+            color: #000;
+        }
+        .feature-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .feature-box {
+            background: #f4f4f4;
+            padding: 20px;
             border-radius: 10px;
+            width: 300px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .feature-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .feature-box h3 {
+            color: #007BFF;
+        }
+        .feature-box a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            background: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
             transition: 0.3s;
         }
-        
-        .btn:hover {
-            background: #1c4288;    
+        .feature-box a:hover {
+            background: #0056b3;
+        }
+        footer {
+            background: #007BFF;
+            padding: 10px;
+            text-align: center;
+            color: #fff;
         }
     </style>
 </head>
 <body>
-    <img src="https://media.discordapp.net/attachments/1338577166086045717/1352411948683235398/image.png?ex=67ddeb47&is=67dc99c7&hm=1795835936052591e245ea9fe0f4f39f3a5ed463ded34db85232a21217dcfd53&=&format=webp&quality=lossless&width=321&height=308" alt="Лого" class="logo">
-
-
-    <div class="container">
-        <h1>Добре дошли в HealthMonitor</h1>
-        <p>Нашият инструмент ви помага да изчислите дневния си калориен прием, за да постигнете желаните си цели – отслабване, поддържане или покачване на тегло.</p>
-        <p>Чрез въвеждане на вашата възраст, пол, тегло и ръст, ще получите персонализирана информация за калорийния си баланс.</p>
-        <p>Освен това ще намерите полезни съвети за здравословно хранене и управление на теглото.</p>
-        <a href="BMRcalc.html" class="btn">Изчисли калориите </a>
-        <a href="sleep.html" class="btn">Sleep Counter</a>
-    </div>
+    <header>
+        <h1>HealthMonitor</h1>
+        <nav>
+            <ul>
+                <li><a href="#features">Features</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <h2>Explore Our Features</h2>
+        <p>Health tracking made easy with our intelligent tools.</p>
+    </section>
+    
+    <section class="features" id="features">
+        <h2>What We Offer</h2>
+        <div class="feature-container">
+            <div class="feature-box">
+                <h3>BMR Calculator</h3>
+                <p>Find out your Basal Metabolic Rate (BMR) to understand how many calories your body burns at rest.</p>
+                <a href="BMRcalc.html">Try Now</a>
+            </div>
+            <div class="feature-box">
+                <h3>Sleep Calculator</h3>
+                <p>Determine the best time to sleep and wake up based on sleep cycles for optimal rest.</p>
+                <a href="sleep.html">Try Now</a>
+            </div>
+            
+            <div class="feature-box">
+                <h3>Calorie Counter</h3>
+                <p>Track your daily calorie intake and ensure you stay on top of your nutrition goals.</p>
+                <a href="caloriescounter.html">Try Now</a>
+            </div>
+            
+            <div class="feature-box">
+                <h3>Exercises</h3>
+                <a href="goal.html">Try Now</a>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 HealthMonitor. All rights reserved.</p>
+    </footer>
 </body>
 </html>
