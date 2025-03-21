@@ -42,6 +42,21 @@
             background: linear-gradient(to right, #007BFF, #00A8FF);
             padding: 100px 20px;
             text-align: center;
+            position: relative;
+        }
+        .logos {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 40px;
+            position: absolute;
+            top: 30px;  /* Adjust this to move the logos lower or higher */
+            left: 15%;   /* Shift logos to the left by 15% */
+            width: 70%;  /* Make the container width 70% to keep it centered */
+        }
+        .logo img {
+            max-width: 100px;  /* Adjust the size of logos */
+            height: auto;
         }
         .hero h2 {
             font-size: 2.5em;
@@ -110,12 +125,24 @@
             <ul>
                 <li><a href="about us page.html">About</a></li>
                 <li><a href="features.html">Features</a></li>
-                
             </ul>
         </nav>
     </header>
     
     <section class="hero">
+        <!-- Logos Section -->
+        <div class="logos">
+            <div class="logo">
+                <img src="https://cdn.discordapp.com/attachments/1338577166086045717/1352427310770425916/image.png?ex=67ddf995&is=67dca815&hm=eb07e22964efb59d683655a34c9a9e7fa399a187e7bbf11c416f4df393af5b90&" alt="Logo 1"> <!-- Replace with your logo URL -->
+            </div>
+            <div class="logo">
+                <img src="https://cdn.discordapp.com/attachments/1338577166086045717/1352427377812045844/image.png?ex=67ddf9a5&is=67dca825&hm=fe74a200395c8fc2bf6522a0c48a98cbc19f37c34e3f5ba1e39d8b408558ac69&" alt="Logo 2"> <!-- Replace with your logo URL -->
+            </div>
+            <div class="logo">
+                <img src="https://cdn.discordapp.com/attachments/1338577166086045717/1352434273008877608/image.png?ex=67de0011&is=67dcae91&hm=759ea83acbe82b9744c55b4c3d4ea1a54adab6095e53de449d476fc57bee21cb&" alt="Logo 3"> <!-- Replace with your logo URL -->
+            </div>
+        </div>
+        
         <div class="hero-content">
             <h2>Track Your Progress, Transform Your Body</h2>
             <p>Stay motivated and achieve your fitness goals with real-time tracking and insights.</p>
